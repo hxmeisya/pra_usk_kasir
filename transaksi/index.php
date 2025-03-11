@@ -527,7 +527,7 @@ if (isset($_POST['checkout'])) {
 <div class="total-container">
     <h3>Total: Rp <span id="total_bayar"><?= number_format($total, 2, ',', '.') ?></span></h3>
     <form method="post" id="checkoutForm">
-        <input type="hidden" name="total_bayar" value="<?= $total ?>">
+        <input type="hidden" name="total" value="<?= $total ?>">
         <label>Uang Dibayar:</label>
         <input type="number" name="uang_dibayar" id="uang_dibayar" class="form-control" required>
         <h3>Kembalian: Rp <span id="kembalian">0</span></h3>
