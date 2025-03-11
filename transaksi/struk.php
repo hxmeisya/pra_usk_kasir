@@ -23,7 +23,7 @@ if (!isset($koneksi)) {
 }
 
 // Ambil data transaksi
-$query = "SELECT t.id, t.total_harga, t.bayar, t.kembali, t.tanggal_transaksi, u.username 
+$query = "SELECT t.id, t.total_harga, t.bayar, t.kembali, t.tanggal_transaksi, u.nama 
           FROM transaksi t 
           JOIN kasir u ON t.idkasir = u.id
           WHERE t.id = ?";
@@ -63,7 +63,7 @@ $pdf->Ln(5);
 // Info Transaksi
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(50, 7, "ID Transaksi: " . $transaksi['id'], 0, 1);
-$pdf->Cell(50, 7, "Kasir: " . $transaksi['username'], 0, 1);
+$pdf->Cell(50, 7, "Kasir: " . $transaksi['nama'], 0, 1);
 $pdf->Cell(50, 7, "Tanggal: " . $transaksi['tanggal_transaksi'], 0, 1);
 $pdf->Ln(5);
 

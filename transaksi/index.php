@@ -300,6 +300,52 @@ if (isset($_POST['checkout'])) {
     box-shadow: 0 0 8px rgba(91, 166, 107, 0.5);
 }
 
+.btn-success {
+        background-color: #ffc107;
+        color: #ffffff;
+        border: none;
+        padding: 6px 12px; /* Ukuran tombol lebih kecil */
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 8px; /* Jarak atas tombol */
+        margin-bottom: 8px; /* Jarak bawah tombol */
+    }
+
+    .btn-success:hover {
+        background-color: #e0a800;
+        transform: translateY(-1px);
+    }
+
+    .btn-success:active {
+        background-color: #d39e00;
+        transform: translateY(0);
+    }
+
+    /* Tambahkan jarak antar elemen form agar tidak berdempetan */
+    .form-control {
+        margin-bottom: 8px; /* Jarak antar input dan tombol */
+    }
+
+    #search {
+    width: 100%;
+    max-width: 200px;
+    padding: 5px;
+    border: 2px solid #4A4A4A;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#search:focus {
+    border-color: #FF9F9F;
+    box-shadow: 0 0 8px rgba(91, 166, 107, 0.5);
+}
+    
 /* Styling untuk tombol Hapus */
 .btn-delete {
     background-color: #e74c3c;
